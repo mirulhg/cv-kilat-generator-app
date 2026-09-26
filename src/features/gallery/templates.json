@@ -1,0 +1,360 @@
+[
+  {
+    "id": "0b9afb56-3922-4cb8-8dfa-53576e24ad20",
+    "category": "Desainer Grafis",
+    "name": "Naya Ardiningsih",
+    "headline": "Desainer Grafis Lepas",
+    "portfolio": {
+      "profile": {
+        "fullName": "Naya Ardiningsih",
+        "headline": "Desainer Grafis Lepas"
+      },
+      "summary": {
+        "text": "Desainer grafis dengan 4 tahun pengalaman membantu usaha kecil dan menengah membangun identitas visual yang konsisten, dari logo hingga materi media sosial."
+      },
+      "experience": [
+        {
+          "id": "15cf416a-4f25-4023-92e8-08f09b69b18c",
+          "role": "Desainer Grafis Lepas",
+          "company": "Mandiri (Klien Lepas)",
+          "startDate": "2021-03",
+          "isCurrent": true,
+          "description": "Mengerjakan identitas visual, kemasan produk, dan materi promosi untuk lebih dari 20 usaha kecil."
+        }
+      ],
+      "education": [
+        {
+          "id": "2210fdae-256b-4a96-9d3e-50d11aa855fa",
+          "institution": "Institut Seni Indonesia",
+          "degree": "S1 Desain Komunikasi Visual",
+          "startDate": "2015-08",
+          "endDate": "2019-07"
+        }
+      ],
+      "skills": [
+        { "id": "70d711e2-0ae2-42c9-b2b1-91cf6d41748c", "name": "Adobe Illustrator" },
+        { "id": "2d0326ca-78a8-440a-89ab-f83fc5b108c1", "name": "Adobe Photoshop" },
+        { "id": "c30417a9-f074-4e75-974f-f07cfa2f2c0d", "name": "Branding" }
+      ],
+      "projects": [
+        {
+          "id": "d6e0c321-119d-402f-a247-cdd9eb669d30",
+          "title": "Rebranding Kedai Kopi Nusantara",
+          "description": "Merancang ulang logo, kemasan, dan panduan merek untuk jaringan kedai kopi lokal."
+        }
+      ],
+      "contact": {
+        "email": "naya.ardiningsih@contoh.id",
+        "location": "Yogyakarta",
+        "links": [
+          {
+            "id": "0276784b-264b-4301-bc03-5210fd89b2ae",
+            "label": "Portofolio Behance",
+            "url": "https://contoh.id/naya-ardiningsih"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "c97e90b9-d50f-43a0-8bd3-4c9609ff9a0c",
+    "category": "Desainer Grafis",
+    "name": "Bagas Wirawan",
+    "headline": "Desainer Grafis & Ilustrator",
+    "portfolio": {
+      "profile": {
+        "fullName": "Bagas Wirawan",
+        "headline": "Desainer Grafis & Ilustrator"
+      },
+      "summary": {
+        "text": "Ilustrator dan desainer grafis yang berfokus pada gaya visual playful untuk kampanye digital dan buku anak."
+      },
+      "experience": [
+        {
+          "id": "4e60787a-62de-48a8-80ff-a66fb873f8a8",
+          "role": "Desainer Grafis",
+          "company": "Studio Kreatif Warna",
+          "startDate": "2019-01",
+          "endDate": "2023-06",
+          "isCurrent": false,
+          "description": "Membuat ilustrasi dan aset visual untuk kampanye iklan lebih dari 15 klien nasional."
+        }
+      ],
+      "education": [
+        {
+          "id": "49d7ad4c-c127-4903-ba36-5cdffd199f23",
+          "institution": "Universitas Trisakti",
+          "degree": "S1 Desain Grafis",
+          "startDate": "2014-08",
+          "endDate": "2018-07"
+        }
+      ],
+      "skills": [
+        { "id": "7780479b-8de3-4187-956d-49b49e896aac", "name": "Ilustrasi Digital" },
+        { "id": "7d5c114b-d4d7-4bc8-9c07-11bff07b7031", "name": "Adobe InDesign" },
+        { "id": "8edd9985-ac8c-4548-bdad-f6a606e960f5", "name": "Motion Graphic" }
+      ],
+      "projects": [
+        {
+          "id": "5b14d52a-50f7-410d-9d2f-6d1b1073af55",
+          "title": "Ilustrasi Buku Cerita Anak \"Petualangan Bumi\"",
+          "description": "Mengilustrasikan 24 halaman buku cerita anak bertema lingkungan."
+        }
+      ],
+      "contact": {
+        "email": "bagas.wirawan@contoh.id",
+        "location": "Bandung",
+        "links": [
+          {
+            "id": "ac49bb70-1d40-4c29-b404-e6b2f84bbc31",
+            "label": "Instagram Portofolio",
+            "url": "https://contoh.id/bagas-wirawan"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "2d59ca45-6548-4c51-bc2c-6ab18edf49fd",
+    "category": "Pengembang Web",
+    "name": "Raka Pradipta",
+    "headline": "Pengembang Web Front-End",
+    "portfolio": {
+      "profile": {
+        "fullName": "Raka Pradipta",
+        "headline": "Pengembang Web Front-End"
+      },
+      "summary": {
+        "text": "Pengembang front-end dengan pengalaman membangun aplikasi web yang cepat dan mudah diakses menggunakan React dan TypeScript."
+      },
+      "experience": [
+        {
+          "id": "5efdeab5-d78e-4a4c-a6b6-67de540b02e2",
+          "role": "Pengembang Front-End",
+          "company": "PT Solusi Digital Nusantara",
+          "startDate": "2022-02",
+          "isCurrent": true,
+          "description": "Membangun dan memelihara dashboard internal yang digunakan oleh lebih dari 200 pengguna harian."
+        },
+        {
+          "id": "1d17375d-5ba0-45c0-afdc-3502b1c05767",
+          "role": "Pengembang Web Magang",
+          "company": "Startup Teknologi Andalan",
+          "startDate": "2021-06",
+          "endDate": "2022-01",
+          "isCurrent": false,
+          "description": "Membantu implementasi antarmuka landing page dan halaman pemasaran."
+        }
+      ],
+      "education": [
+        {
+          "id": "8016ddad-a5a7-4167-ba6f-8450910a5149",
+          "institution": "Institut Teknologi Sepuluh Nopember",
+          "degree": "S1 Teknik Informatika",
+          "startDate": "2017-08",
+          "endDate": "2021-07"
+        }
+      ],
+      "skills": [
+        { "id": "6f9f3982-51c8-4ff7-bcf2-7ac55d2f1c1d", "name": "React" },
+        { "id": "3e9398e8-668f-4e45-ba7f-e4c374b29519", "name": "TypeScript" },
+        { "id": "6b36952d-14bf-45fc-b298-ce373cf345a0", "name": "Tailwind CSS" },
+        { "id": "647e15e0-05d3-4cac-a141-d7ad1c408216", "name": "Aksesibilitas Web" }
+      ],
+      "projects": [
+        {
+          "id": "d37b57e2-51e1-463b-80ab-58c58af38339",
+          "title": "Dashboard Analitik Penjualan",
+          "description": "Membangun dashboard visualisasi data penjualan real-time untuk tim manajemen."
+        }
+      ],
+      "contact": {
+        "email": "raka.pradipta@contoh.id",
+        "location": "Surabaya",
+        "links": [
+          {
+            "id": "3e1996cb-a6d6-4c9b-b85d-42e8abfb841f",
+            "label": "GitHub",
+            "url": "https://contoh.id/raka-pradipta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "2f17ff04-30df-4697-bcb7-ec19a4ce98b3",
+    "category": "Pengembang Web",
+    "name": "Salsabila Putri",
+    "headline": "Pengembang Web Full-Stack",
+    "portfolio": {
+      "profile": {
+        "fullName": "Salsabila Putri",
+        "headline": "Pengembang Web Full-Stack"
+      },
+      "summary": {
+        "text": "Pengembang full-stack yang terbiasa membangun aplikasi end-to-end, dari basis data hingga antarmuka pengguna, untuk produk skala kecil dan menengah."
+      },
+      "experience": [
+        {
+          "id": "2dd92518-5388-4e6d-a8f0-f603014c79ac",
+          "role": "Pengembang Full-Stack",
+          "company": "Koperasi Digital Sejahtera",
+          "startDate": "2020-09",
+          "isCurrent": true,
+          "description": "Mengembangkan sistem manajemen anggota koperasi berbasis web yang digunakan di 12 cabang."
+        }
+      ],
+      "education": [
+        {
+          "id": "9e8ef9b6-f009-4748-ae36-9c250d111ae9",
+          "institution": "Universitas Gadjah Mada",
+          "degree": "S1 Ilmu Komputer",
+          "startDate": "2016-08",
+          "endDate": "2020-07"
+        }
+      ],
+      "skills": [
+        { "id": "057b2ccc-876f-42b5-af7d-8fb8e8335fc9", "name": "Node.js" },
+        { "id": "3043f138-56b4-4260-b970-63031a27de0f", "name": "PostgreSQL" },
+        { "id": "3b079d7c-3114-41ba-92e8-2ab0a6ea341f", "name": "React" }
+      ],
+      "projects": [
+        {
+          "id": "df1bec89-69af-4d5c-b640-5804266cba97",
+          "title": "Sistem Manajemen Anggota Koperasi",
+          "description": "Aplikasi pencatatan simpanan, pinjaman, dan laporan keuangan anggota koperasi."
+        },
+        {
+          "id": "32601272-1c1a-455e-95fc-1c002dd446b0",
+          "title": "API Pembayaran Internal",
+          "description": "Merancang API integrasi pembayaran untuk kebutuhan internal koperasi."
+        }
+      ],
+      "contact": {
+        "email": "salsabila.putri@contoh.id",
+        "location": "Semarang",
+        "links": [
+          {
+            "id": "8f1745d0-9928-41bc-ac86-1374ef150e60",
+            "label": "GitHub",
+            "url": "https://contoh.id/salsabila-putri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "621d4a10-190c-4487-a548-4da18615fd53",
+    "category": "Penulis Konten",
+    "name": "Dewi Anggraini",
+    "headline": "Penulis & Konten Kreator",
+    "portfolio": {
+      "profile": {
+        "fullName": "Dewi Anggraini",
+        "headline": "Penulis & Konten Kreator"
+      },
+      "summary": {
+        "text": "Penulis konten dengan pengalaman menulis artikel, naskah media sosial, dan buletin untuk merek di bidang gaya hidup dan kesehatan."
+      },
+      "experience": [
+        {
+          "id": "6ec0a984-7974-4d8d-ae7d-cbca3a9e8155",
+          "role": "Penulis Konten Lepas",
+          "company": "Mandiri (Klien Lepas)",
+          "startDate": "2020-05",
+          "isCurrent": true,
+          "description": "Menulis lebih dari 300 artikel dan naskah media sosial untuk klien di bidang kesehatan dan gaya hidup."
+        }
+      ],
+      "education": [
+        {
+          "id": "b497cc72-897e-4e04-af70-64e97b4fc48c",
+          "institution": "Universitas Padjadjaran",
+          "degree": "S1 Ilmu Komunikasi",
+          "startDate": "2015-08",
+          "endDate": "2019-07"
+        }
+      ],
+      "skills": [
+        { "id": "77c2e7be-0864-4990-b282-82da0c54d235", "name": "Penulisan Artikel" },
+        { "id": "9131f54f-2ae3-4213-9b8f-ef78082e02d2", "name": "Copywriting" },
+        { "id": "04913a10-ed12-403f-a4c6-5395766b2edc", "name": "Riset Konten" }
+      ],
+      "projects": [
+        {
+          "id": "bf4c1a22-795d-43f5-8cd7-18363bb05ee6",
+          "title": "Seri Buletin Mingguan \"Hidup Sehat\"",
+          "description": "Menulis dan mengelola buletin email mingguan dengan lebih dari 5.000 pelanggan."
+        }
+      ],
+      "contact": {
+        "email": "dewi.anggraini@contoh.id",
+        "location": "Jakarta",
+        "links": [
+          {
+            "id": "f5451daa-3058-463a-b2db-5e513d032423",
+            "label": "Portofolio Tulisan",
+            "url": "https://contoh.id/dewi-anggraini"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "12a76acd-ede7-4042-b4c6-550be3f1da26",
+    "category": "Penulis Konten",
+    "name": "Farhan Maulana",
+    "headline": "Penulis Konten SEO",
+    "portfolio": {
+      "profile": {
+        "fullName": "Farhan Maulana",
+        "headline": "Penulis Konten SEO"
+      },
+      "summary": {
+        "text": "Penulis konten yang fokus pada artikel ramah mesin pencari untuk membantu situs klien naik peringkat dan menjangkau lebih banyak pembaca."
+      },
+      "experience": [
+        {
+          "id": "867052bd-4068-4865-be0c-4db51c908446",
+          "role": "Penulis Konten SEO",
+          "company": "Agensi Konten Maju Bersama",
+          "startDate": "2021-10",
+          "isCurrent": true,
+          "description": "Menulis artikel SEO untuk lebih dari 10 situs klien di berbagai industri."
+        }
+      ],
+      "education": [
+        {
+          "id": "1a67d0c9-733d-4569-a8d1-0f844cfe00f7",
+          "institution": "Universitas Negeri Malang",
+          "degree": "S1 Sastra Indonesia",
+          "startDate": "2016-08",
+          "endDate": "2020-07"
+        }
+      ],
+      "skills": [
+        { "id": "4ef70375-e115-4892-856b-73c77918a358", "name": "SEO On-Page" },
+        { "id": "54784eb4-5b38-4e3f-baac-a8e5debcb801", "name": "Riset Kata Kunci" },
+        { "id": "60d6eaf6-6e8c-49a6-a253-55bc91d1299a", "name": "Penulisan Artikel" }
+      ],
+      "projects": [
+        {
+          "id": "b8644811-e35e-4bda-9bcc-6e58171cc996",
+          "title": "Optimasi Konten Blog E-commerce",
+          "description": "Menulis ulang 50 artikel blog yang meningkatkan trafik organik klien sebesar 40%."
+        }
+      ],
+      "contact": {
+        "email": "farhan.maulana@contoh.id",
+        "location": "Malang",
+        "links": [
+          {
+            "id": "807c7596-ed46-4c8c-87f0-7698dc23199b",
+            "label": "Portofolio Tulisan",
+            "url": "https://contoh.id/farhan-maulana"
+          }
+        ]
+      }
+    }
+  }
+]
