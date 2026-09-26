@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Dokumen internal, tidak diunggah ke remote
+Docs/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
