@@ -1,29 +1,20 @@
-import { draftSchema, type Draft } from '../draft'
+import type { Draft } from '../draft'
 import type { Portfolio } from '../schema'
 import type { Theme } from '../theme/schema'
 import type { Section } from '../sections/schema'
 import { getDb, DRAFTS_STORE } from './db'
+import { parseDraftRecord, DraftCorruptError } from './parseDraftRecord'
 
 const DRAFT_KEY = 'current-draft'
 
-export class DraftCorruptError extends Error {
-  constructor(cause: unknown) {
-    super('Draf tersimpan tidak valid dan tidak bisa dibaca.')
-    this.name = 'DraftCorruptError'
-    this.cause = cause
-  }
-}
+export { DraftCorruptError }
 
 export async function readDraft(): Promise<Draft | undefined> {
   const db = await getDb()
   const raw = await db.get(DRAFTS_STORE, DRAFT_KEY)
   if (raw === undefined) return undefined
 
-  const result = draftSchema.safeParse(raw)
-  if (!result.success) {
-    throw new DraftCorruptError(result.error)
-  }
-  return result.data
+  return parseDraftRecord(raw)
 }
 
 export async function writeDraft(

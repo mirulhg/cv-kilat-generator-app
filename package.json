@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "validate:theme-contrast": "node scripts/validate-theme-contrast.mjs"
+    "validate:theme-contrast": "node scripts/validate-theme-contrast.mjs",
+    "test": "node --import tsx --test src/**/*.test.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
@@ -28,6 +29,7 @@
     "oxlint": "^1.81.0",
     "postcss": "^8.5.28",
     "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   }
