@@ -1,0 +1,194 @@
+[
+  {
+    "id": "biru-profesional",
+    "name": "Biru Profesional",
+    "light": {
+      "bg": "#EFF6FF",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#1D4ED8",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#0B1220",
+      "surface": "#14213A",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#60A5FA",
+      "primaryFg": "#0B1220"
+    }
+  },
+  {
+    "id": "hijau-zamrud",
+    "name": "Hijau Zamrud",
+    "light": {
+      "bg": "#ECFDF5",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#047857",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#0B1F19",
+      "surface": "#123128",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#34D399",
+      "primaryFg": "#0B1F19"
+    }
+  },
+  {
+    "id": "ungu-kreatif",
+    "name": "Ungu Kreatif",
+    "light": {
+      "bg": "#F5F3FF",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#6D28D9",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#170F2E",
+      "surface": "#241A44",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#A78BFA",
+      "primaryFg": "#170F2E"
+    }
+  },
+  {
+    "id": "oranye-hangat",
+    "name": "Oranye Hangat",
+    "light": {
+      "bg": "#FFF7ED",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#C2410C",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#2A1608",
+      "surface": "#3D200E",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#FB923C",
+      "primaryFg": "#2A1608"
+    }
+  },
+  {
+    "id": "merah-marun",
+    "name": "Merah Marun",
+    "light": {
+      "bg": "#FFF1F2",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#9F1239",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#240912",
+      "surface": "#38101C",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#FB7185",
+      "primaryFg": "#240912"
+    }
+  },
+  {
+    "id": "teal-modern",
+    "name": "Teal Modern",
+    "light": {
+      "bg": "#F0FDFA",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#0F766E",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#072320",
+      "surface": "#0E332F",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#2DD4BF",
+      "primaryFg": "#072320"
+    }
+  },
+  {
+    "id": "abu-monokrom",
+    "name": "Abu Monokrom",
+    "light": {
+      "bg": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#334155",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#0F172A",
+      "surface": "#1E293B",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#CBD5E1",
+      "primaryFg": "#0F172A"
+    }
+  },
+  {
+    "id": "cokelat-bumi",
+    "name": "Cokelat Bumi",
+    "light": {
+      "bg": "#FFFBEB",
+      "surface": "#FFFFFF",
+      "ink": "#0F172A",
+      "body": "#334155",
+      "muted": "#5B6B84",
+      "border": "#E2E8F0",
+      "primary": "#92400E",
+      "primaryFg": "#FFFFFF"
+    },
+    "dark": {
+      "bg": "#241605",
+      "surface": "#38230A",
+      "ink": "#F8FAFC",
+      "body": "#CBD5E1",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "primary": "#FBBF24",
+      "primaryFg": "#241605"
+    }
+  }
+]

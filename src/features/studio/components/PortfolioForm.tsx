@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { FormProvider, useForm, useWatch } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { portfolioSchema, type Portfolio } from '../schema'
+import type { Theme } from '../theme/schema'
+import type { Section } from '../sections/schema'
 import { useAutosaveDraft } from '../hooks/useAutosaveDraft'
 import { ProfileSection } from './sections/ProfileSection'
 import { SummarySection } from './sections/SummarySection'
@@ -11,12 +14,19 @@ import { ProjectsSection } from './sections/ProjectsSection'
 import { ContactSection } from './sections/ContactSection'
 import { AutosaveStatus } from './AutosaveStatus'
 import { PreviewPane } from './PreviewPane'
+import { ThemePanel } from './theme/ThemePanel'
+import { SectionsPanel } from './section-manager/SectionsPanel'
 
 interface PortfolioFormProps {
   defaultValues: Portfolio
+  defaultTheme: Theme
+  defaultSections: Section[]
 }
 
-export function PortfolioForm({ defaultValues }: PortfolioFormProps) {
+export function PortfolioForm({ defaultValues, defaultTheme, defaultSections }: PortfolioFormProps) {
+  const [theme, setTheme] = useState(defaultTheme)
+  const [sections, setSections] = useState(defaultSections)
+
   const methods = useForm<Portfolio>({
     resolver: zodResolver(portfolioSchema),
     defaultValues,
@@ -24,13 +34,15 @@ export function PortfolioForm({ defaultValues }: PortfolioFormProps) {
   })
 
   const portfolio = useWatch({ control: methods.control }) as Portfolio
-  const { status, retry } = useAutosaveDraft(portfolio)
+  const { status, retry } = useAutosaveDraft(portfolio, theme, sections)
 
   return (
     <FormProvider {...methods}>
       <div className="grid gap-8 lg:grid-cols-2">
         <form className="space-y-8" onSubmit={(event) => event.preventDefault()}>
           <AutosaveStatus status={status} onRetry={retry} />
+          <ThemePanel theme={theme} onThemeChange={setTheme} />
+          <SectionsPanel sections={sections} onSectionsChange={setSections} />
           <ProfileSection />
           <SummarySection />
           <ExperienceSection />
@@ -40,7 +52,7 @@ export function PortfolioForm({ defaultValues }: PortfolioFormProps) {
           <ContactSection />
         </form>
 
-        <PreviewPane portfolio={portfolio} />
+        <PreviewPane portfolio={portfolio} theme={theme} sections={sections} />
       </div>
     </FormProvider>
   )

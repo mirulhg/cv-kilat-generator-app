@@ -20,14 +20,22 @@ export function StudioPage() {
             <p className="mb-4 text-sm text-muted">
               Belum ada draf tersimpan. Mulai isi formulir di bawah.
             </p>
-            <PortfolioForm defaultValues={state.portfolio} />
+            <PortfolioForm
+              defaultValues={state.portfolio}
+              defaultTheme={state.theme}
+              defaultSections={state.sections}
+            />
           </>
         )}
 
         {state.status === 'success' && (
           <>
             <p className="mb-4 text-sm text-muted">Draf sebelumnya berhasil dipulihkan.</p>
-            <PortfolioForm defaultValues={state.portfolio} />
+            <PortfolioForm
+              defaultValues={state.portfolio}
+              defaultTheme={state.theme}
+              defaultSections={state.sections}
+            />
           </>
         )}
       </div>

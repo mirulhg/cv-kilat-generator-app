@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import { PreviewContent } from './PreviewContent'
+import { themeToCssVars } from '../theme/cssVars'
 import type { Portfolio } from '../schema'
+import type { Theme } from '../theme/schema'
+import type { Section } from '../sections/schema'
 
 interface PreviewPaneProps {
   portfolio: Portfolio
+  theme: Theme
+  sections: Section[]
 }
 
-export function PreviewPane({ portfolio }: PreviewPaneProps) {
+export function PreviewPane({ portfolio, theme, sections }: PreviewPaneProps) {
   const [viewport, setViewport] = useState<'desktop' | 'mobile'>('desktop')
 
   return (
@@ -42,11 +47,14 @@ export function PreviewPane({ portfolio }: PreviewPaneProps) {
       </div>
 
       <div
-        className={`mt-4 rounded-lg border border-border bg-surface p-6 shadow-subtle ${
+        style={themeToCssVars(theme)}
+        className={`mt-4 rounded-lg border border-[var(--portfolio-border)] bg-[var(--portfolio-bg)] p-6 shadow-subtle ${
           viewport === 'mobile' ? 'mx-auto max-w-sm' : ''
         }`}
       >
-        <PreviewContent portfolio={portfolio} />
+        <div style={{ fontFamily: 'var(--portfolio-font-body)' }}>
+          <PreviewContent portfolio={portfolio} theme={theme} sections={sections} />
+        </div>
       </div>
     </aside>
   )

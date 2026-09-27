@@ -1,5 +1,7 @@
 import { draftSchema, type Draft } from '../draft'
 import type { Portfolio } from '../schema'
+import type { Theme } from '../theme/schema'
+import type { Section } from '../sections/schema'
 import { getDb, DRAFTS_STORE } from './db'
 
 const DRAFT_KEY = 'current-draft'
@@ -24,10 +26,16 @@ export async function readDraft(): Promise<Draft | undefined> {
   return result.data
 }
 
-export async function writeDraft(portfolio: Portfolio): Promise<Draft> {
+export async function writeDraft(
+  portfolio: Portfolio,
+  theme: Theme,
+  sections: Section[],
+): Promise<Draft> {
   const draft: Draft = {
     id: DRAFT_KEY,
     portfolio,
+    theme,
+    sections,
     updatedAt: new Date().toISOString(),
   }
   const db = await getDb()

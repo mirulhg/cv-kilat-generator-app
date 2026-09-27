@@ -54,6 +54,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "ungu-kreatif",
+      "fontPairId": "editorial-elegan",
+      "layoutId": "sidebar-left",
+      "colorMode": "light"
     }
   },
   {
@@ -112,6 +118,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "oranye-hangat",
+      "fontPairId": "humanis",
+      "layoutId": "sidebar-left",
+      "colorMode": "light"
     }
   },
   {
@@ -179,6 +191,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "teal-modern",
+      "fontPairId": "mono-teknis",
+      "layoutId": "two-column",
+      "colorMode": "dark"
     }
   },
   {
@@ -241,6 +259,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "biru-profesional",
+      "fontPairId": "mono-teknis",
+      "layoutId": "two-column",
+      "colorMode": "light"
     }
   },
   {
@@ -298,6 +322,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "cokelat-bumi",
+      "fontPairId": "serif-klasik",
+      "layoutId": "single-column",
+      "colorMode": "light"
     }
   },
   {
@@ -355,6 +385,12 @@
           }
         ]
       }
+    },
+    "theme": {
+      "paletteId": "abu-monokrom",
+      "fontPairId": "sans-modern",
+      "layoutId": "single-column",
+      "colorMode": "light"
     }
   }
 ]

@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { writeDraft } from '../api/draft-storage'
 import type { Portfolio } from '../schema'
+import type { Theme } from '../theme/schema'
+import type { Section } from '../sections/schema'
 
 const DEBOUNCE_MS = 2000
 
 type SaveStatus = 'idle' | 'saving' | 'saved' | 'error'
 
-export function useAutosaveDraft(portfolio: Portfolio) {
+export function useAutosaveDraft(portfolio: Portfolio, theme: Theme, sections: Section[]) {
   const [status, setStatus] = useState<SaveStatus>('idle')
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined)
   const skipNextSave = useRef(true)
@@ -14,12 +16,12 @@ export function useAutosaveDraft(portfolio: Portfolio) {
   // useCallback di sini menstabilkan referensi agar tidak memicu ulang setTimeout di effect debounce setiap render.
   const save = useCallback(() => {
     setStatus('saving')
-    writeDraft(portfolio)
+    writeDraft(portfolio, theme, sections)
       .then(() => setStatus('saved'))
       .catch(() => setStatus('error'))
-  }, [portfolio])
+  }, [portfolio, theme, sections])
 
-  // Menulis draf ke IndexedDB setiap perubahan form, didebounce ~2 detik.
+  // Menulis draf ke IndexedDB setiap perubahan form, tema, atau bagian, didebounce ~2 detik.
   useEffect(() => {
     if (skipNextSave.current) {
       skipNextSave.current = false
@@ -30,7 +32,7 @@ export function useAutosaveDraft(portfolio: Portfolio) {
     timeoutRef.current = setTimeout(save, DEBOUNCE_MS)
 
     return () => clearTimeout(timeoutRef.current)
-  }, [portfolio, save])
+  }, [portfolio, theme, sections, save])
 
   return { status, retry: save }
 }

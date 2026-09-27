@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { readDraft, writeDraft } from '@/features/studio'
+import { readDraft, writeDraft, createDefaultSections } from '@/features/studio'
 import type { GalleryTemplate } from '../schema'
 
 export function useApplyTemplate() {
@@ -21,13 +21,13 @@ export function useApplyTemplate() {
       return
     }
 
-    await writeDraft(template.portfolio)
+    await writeDraft(template.portfolio, template.theme, createDefaultSections())
     navigate('/studio')
   }
 
   async function confirmReplace() {
     if (!pendingTemplate) return
-    await writeDraft(pendingTemplate.portfolio)
+    await writeDraft(pendingTemplate.portfolio, pendingTemplate.theme, createDefaultSections())
     setPendingTemplate(undefined)
     navigate('/studio')
   }
