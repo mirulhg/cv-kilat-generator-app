@@ -16,6 +16,8 @@ import { AutosaveStatus } from './AutosaveStatus'
 import { PreviewPane } from './PreviewPane'
 import { ThemePanel } from './theme/ThemePanel'
 import { SectionsPanel } from './section-manager/SectionsPanel'
+import { DownloadPdfButton } from './DownloadPdfButton'
+import { PrintPortfolio } from './PrintPortfolio'
 
 interface PortfolioFormProps {
   defaultValues: Portfolio
@@ -38,7 +40,9 @@ export function PortfolioForm({ defaultValues, defaultTheme, defaultSections }: 
 
   return (
     <FormProvider {...methods}>
-      <div className="grid gap-8 lg:grid-cols-2">
+      <DownloadPdfButton portfolio={portfolio} />
+
+      <div className="grid gap-8 lg:grid-cols-2 print:hidden">
         <form className="space-y-8" onSubmit={(event) => event.preventDefault()}>
           <AutosaveStatus status={status} onRetry={retry} />
           <ThemePanel theme={theme} onThemeChange={setTheme} />
@@ -54,6 +58,8 @@ export function PortfolioForm({ defaultValues, defaultTheme, defaultSections }: 
 
         <PreviewPane portfolio={portfolio} theme={theme} sections={sections} />
       </div>
+
+      <PrintPortfolio portfolio={portfolio} theme={theme} sections={sections} />
     </FormProvider>
   )
 }

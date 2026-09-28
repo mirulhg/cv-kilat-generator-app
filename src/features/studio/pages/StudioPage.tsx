@@ -8,7 +8,7 @@ export function StudioPage() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-2xl font-semibold text-ink">Studio Portofolio</h1>
+      <h1 className="text-2xl font-semibold text-ink print:hidden">Studio Portofolio</h1>
 
       <div className="mt-6">
         {state.status === 'loading' && <DraftPageSkeleton />}
@@ -17,7 +17,7 @@ export function StudioPage() {
 
         {state.status === 'empty' && (
           <>
-            <p className="mb-4 text-sm text-muted">
+            <p className="mb-4 text-sm text-muted print:hidden">
               Belum ada draf tersimpan. Mulai isi formulir di bawah.
             </p>
             <PortfolioForm
@@ -30,7 +30,7 @@ export function StudioPage() {
 
         {state.status === 'success' && (
           <>
-            <p className="mb-4 text-sm text-muted">Draf sebelumnya berhasil dipulihkan.</p>
+            <p className="mb-4 text-sm text-muted print:hidden">Draf sebelumnya berhasil dipulihkan.</p>
             <PortfolioForm
               defaultValues={state.portfolio}
               defaultTheme={state.theme}

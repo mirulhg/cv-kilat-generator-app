@@ -13,3 +13,16 @@
     animation: none;
   }
 }
+
+/* Unduh PDF (UB-1): PreviewContent yang sama dirender ulang di .print-portfolio,
+   disembunyikan di layar, dan ditampilkan hanya saat window.print() dipanggil. */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+
+  .print-portfolio section {
+    break-inside: avoid;
+  }
+}
