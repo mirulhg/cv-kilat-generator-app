@@ -16,3 +16,5 @@ npm run dev
 - `npm run build` — build produksi (`tsc -b && vite build`)
 - `npm run lint` — jalankan oxlint
 - `npm run preview` — pratinjau hasil build
+- `npm test` — jalankan test regresi (`node:test` bawaan, lewat `tsx`)
+- `npm run validate:theme-contrast` — validasi kontras WCAG AA seluruh palet tema
