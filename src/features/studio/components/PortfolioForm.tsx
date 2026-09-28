@@ -18,6 +18,7 @@ import { ThemePanel } from './theme/ThemePanel'
 import { SectionsPanel } from './section-manager/SectionsPanel'
 import { DownloadPdfButton } from './DownloadPdfButton'
 import { PrintPortfolio } from './PrintPortfolio'
+import { DownloadImageButtons } from './summary-card/DownloadImageButtons'
 
 interface PortfolioFormProps {
   defaultValues: Portfolio
@@ -41,6 +42,7 @@ export function PortfolioForm({ defaultValues, defaultTheme, defaultSections }: 
   return (
     <FormProvider {...methods}>
       <DownloadPdfButton portfolio={portfolio} />
+      <DownloadImageButtons portfolio={portfolio} theme={theme} />
 
       <div className="grid gap-8 lg:grid-cols-2 print:hidden">
         <form className="space-y-8" onSubmit={(event) => event.preventDefault()}>
